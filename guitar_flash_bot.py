@@ -31,5 +31,3 @@ while not keyboard.is_pressed('1'):
 
     for tecla in pressionar_teclas:
         pyautogui.keyUp(tecla)
-
-    sleep(0.01)
