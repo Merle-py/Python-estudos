@@ -1,1 +1,0 @@
-print("novas funções")
