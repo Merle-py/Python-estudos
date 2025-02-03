@@ -1,3 +1,6 @@
+from datetime import datetime,timezone
+import random
+
 ## Módulo 2 - Gerar apresentação do usuário
 
 ### Funcionalidades do módulo 2 - Mensagem de boas vindas!
