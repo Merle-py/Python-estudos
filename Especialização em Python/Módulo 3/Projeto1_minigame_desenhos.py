@@ -1,5 +1,6 @@
-from turtle import Turtle
-import keyboard
+import turtle
+from turtle import *
+
 
 '''# Inicializar uma Turtle 
 t = Turtle()
@@ -23,39 +24,40 @@ t.backward(200)
 
 input()'''
 
+# Movimento para cima
+def cima():
+    t.setheading(90)
+    t.forward(30)
+
+# Movimento para baixo
+def baixo():
+    t.setheading(270)
+    t.forward(30)
+
+# Movimento para a esquerda
+def esquerda():
+    t.setheading(180)
+    t.forward(30)
+
+# Movimento para a direita
+def direita():
+    t.setheading(0)
+    t.forward(30)
+
 
 # Criação da turtle
-t = Turtle()
+setup(500, 500)
+Screen()
+t = turtle.Turtle()
 
 # Velocidade da turtle
-t.speed(1)
-print("Use as setas do teclado para movimentar a Turtle\nPressione 1 para sair")
+t.speed(0)
+print("Use as setas do teclado para movimentar a Turtle")
 
-while not keyboard.press("1"):
-    # Movimento para cima
+listen()
+onkey(cima,'Up')
+onkey(baixo,'Down')
+onkey(esquerda,'Left')
+onkey(direita,'Right')
 
-    if keyboard.press("up"):
-        t.setheading(90)
-        t.forward(1)
-        while keyboard.is_pressed("up"):
-            pass
-    # Movimento para baixo
-    elif keyboard.press("down"):
-        t.setheading(270)
-        t.forward(1)
-        while keyboard.is_pressed("down"):
-            pass
-    
-    # Movimento para a esquerda
-    elif keyboard.press("left"):
-        t.setheading(180)
-        t.forward(1)
-        while keyboard.is_pressed("left"):
-            pass
-    
-    # Movimento para a direita
-    elif keyboard.press("right"):
-        t.setheading(0)
-        t.forward(1)
-        while keyboard.is_pressed("right"):
-            pass
+mainloop()
