@@ -14,6 +14,20 @@
 
 2.Operadores Booleanos:
 
-True, False, comparadores and entre outros vistos no arquivo 3_Bool
+'True', 'False', comparadores and entre outros vistos no arquivo 3_Bool
 
 3.Operadores de Igualdade:
+
+usa os operadores '==' e 'is'
+
+'==' compara valores
+
+'is' compara a identidade (armazenamento na memória)
+
+4.Operador Ternário:
+
+expressão if condição else expressão
+
+Exemplo:
+
+print("Favor embarcar") if possui_passaporte else print("Favor tirar passaporte")
